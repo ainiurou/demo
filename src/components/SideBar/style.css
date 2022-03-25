@@ -1,0 +1,62 @@
+.sidebar-toggle{
+  width: 200px;
+  height:100%;
+  display: inline-block;
+  background: #06275e;
+}
+
+.sidebar-close{
+  width: 50px;
+  height:100%;
+  display: inline-block;
+  background: #06275e;
+}
+
+.closed{
+  display: block;
+  width: 130px;
+  background-color: coral;
+}
+#manager {
+  margin-top: 100px;
+}
+#manager ul li{
+  width: 130px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.open{
+  display: block;
+  background-color: coral;
+}
+.hide{
+  display: none;
+}
+#manager ul li.pro{
+  border:1px solid #fff;
+}
+#manager ul li ul li{
+  position: relative;
+  left: 91px;
+  top: -31px;
+  padding:3px 0;
+  border: 0;
+  color:lightgray;
+  line-height: 20px;
+  border-top:1px solid #fff;
+  background-color: darkorchid;
+}
+#manager ul li ul li:hover{
+  color: #fff;
+}
+#manager ul li ul li:last-child{
+  border-bottom:1px solid #fff;
+}

@@ -5,6 +5,7 @@ import {
 } from "../contants";
 
 export function addTodo(todo){
+  console.log(todo)
     return{
         type:ADD_TODO,
         todo

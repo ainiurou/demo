@@ -1,0 +1,23 @@
+.header-toggle{
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #029bdc;
+  width:calc(100% - 200px);
+}
+
+.header-close{
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #029bdc;
+  width:calc(100% - 50px);
+}
+
+.btn-toggle{
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}

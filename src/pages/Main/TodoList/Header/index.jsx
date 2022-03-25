@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css'
+import {nanoid} from 'nanoid'
 export default  function Header (props){
 
     function keyUphandle(event){
@@ -9,7 +10,8 @@ export default  function Header (props){
             alert('输入的内容不能为空')
             return
         }
-        
+        props.addTodo([{id:nanoid(), name:target.value, done:false}])
+        target.value = ''
     }
 
     return(

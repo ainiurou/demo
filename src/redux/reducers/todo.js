@@ -4,14 +4,18 @@ import {
     UPDATE_TODO
 } from "../contants";
 
-const defaultState = []
+const defaultState = [
+  
+]
 
 const todo = (state=defaultState,action) => {
     switch(action.type){
         case ADD_TODO:
+          const newArr = [...action.todo]
+          console.log(newArr)
             return[
                 ...state,
-                action.todo
+                ...newArr
             ]
         case REMOVE_TODO:
             const index = state.findIndex(item=> item.id === action.id)
@@ -28,6 +32,8 @@ const todo = (state=defaultState,action) => {
             return [
                 ...newTodos
             ]
+        default:
+          return state
     }
 }
 export default todo

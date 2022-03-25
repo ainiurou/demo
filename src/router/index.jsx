@@ -4,10 +4,19 @@ import {
     Routes,
     Route
 }from 'react-router-dom'
+import Layout from "../pages/Main/Layout";
+import TodoList from "../pages/Main/TodoList";
 const AppRouter =() =>{
     return(
         <Router>
-            <Route path='/*' element={<Layout />}></Route>
+          {/* <Layout /> */}
+          <Routes>
+            <Route exact path='/*' element={<Layout />}></Route>
+           
+          </Routes>
+            
         </Router>
     )
 }
+
+export default AppRouter

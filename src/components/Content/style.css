@@ -1,0 +1,21 @@
+.content-toggle {
+  position: fixed;
+  height:100%;
+  background: white;
+  display: inline-block;
+  left: 200px;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+}
+
+.content-close {
+  position: fixed;
+  height:100%;
+  background: white;
+  display: inline-block;
+  left: 50px;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+}
